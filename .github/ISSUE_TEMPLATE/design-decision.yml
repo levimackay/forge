@@ -1,0 +1,40 @@
+name: Design decision
+description: An open question that should be settled before or during implementation.
+labels: ["decision"]
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: The question
+      description: State it as a question with more than one defensible answer.
+    validations:
+      required: true
+
+  - type: textarea
+    id: forcing
+    attributes:
+      label: What forces the decision
+      description: What work is blocked, or what becomes expensive if this is settled by accident.
+    validations:
+      required: true
+
+  - type: textarea
+    id: options
+    attributes:
+      label: Options
+      description: Each option with its trade-off. Include the option of doing nothing.
+    validations:
+      required: true
+
+  - type: textarea
+    id: leaning
+    attributes:
+      label: Current leaning
+      description: A position and the reasoning behind it. "No opinion yet" is a valid answer.
+
+  - type: checkboxes
+    id: adr
+    attributes:
+      label: Record
+      options:
+        - label: This decision will be expensive to reverse and needs a record in docs/decisions/

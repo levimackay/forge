@@ -1,0 +1,49 @@
+name: Task
+description: A unit of development work.
+labels: ["task"]
+body:
+  - type: textarea
+    id: goal
+    attributes:
+      label: Goal
+      description: What should be true when this is done.
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Why this is needed now, and what depends on it.
+    validations:
+      required: true
+
+  - type: textarea
+    id: done
+    attributes:
+      label: Definition of done
+      description: Specific, checkable conditions. Not "works well".
+      placeholder: |
+        - [ ] ...
+        - [ ] ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: out_of_scope
+    attributes:
+      label: Out of scope
+      description: What this task deliberately does not cover.
+
+  - type: dropdown
+    id: phase
+    attributes:
+      label: Phase
+      options:
+        - "Phase 1: Core loop"
+        - "Phase 2: Personalization"
+        - "Phase 3: Apple platform"
+        - "Phase 4: Intelligence"
+        - "Phase 5: Production"
+    validations:
+      required: true

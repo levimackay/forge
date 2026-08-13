@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Product scope
+    url: https://github.com/levimackay/forge/blob/main/docs/PRODUCT.md
+    about: Check the MVP scope and non-goals before proposing a feature.
+  - name: Roadmap
+    url: https://github.com/levimackay/forge/blob/main/ROADMAP.md
+    about: See which phase a piece of work belongs to.

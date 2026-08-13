@@ -1,0 +1,39 @@
+name: Bug
+description: Something behaves differently than it should.
+labels: ["bug"]
+body:
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: If it is not reproducible, say what was happening when it appeared.
+    validations:
+      required: true
+
+  - type: input
+    id: environment
+    attributes:
+      label: Device and iOS version
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: test
+    attributes:
+      label: Test
+      options:
+        - label: This bug is in domain logic and needs a failing test before the fix
