@@ -35,10 +35,9 @@ timeline.xctimeline
 playground.xcworkspace
 
 # Swift Package Manager
+# Note: Forge/Packages/ holds first-party source and is tracked deliberately.
 .build/
 .swiftpm/
-Package.resolved
-Packages/
 *.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/
 
 # Swift Playgrounds
