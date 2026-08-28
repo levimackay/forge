@@ -3,7 +3,7 @@
 ![Platform](https://img.shields.io/badge/platform-iOS%2026%2B-1c1c1e?style=flat-square)
 ![Language](https://img.shields.io/badge/swift-6-1c1c1e?style=flat-square)
 ![License](https://img.shields.io/badge/license-MIT-1c1c1e?style=flat-square)
-![Status](https://img.shields.io/badge/status-phase%200%20%C2%B7%20foundation-8a5a2b?style=flat-square)
+![Status](https://img.shields.io/badge/status-phase%201%20%C2%B7%20core%20loop-8a5a2b?style=flat-square)
 
 A native iOS personal development system that turns long-term goals into adaptive daily missions.
 
@@ -35,7 +35,7 @@ FORGE is not a habit tracker and it is not a todo list. A habit tracker records 
 
 ## Status
 
-Phase 0. This repository currently holds the product definition, architecture direction, design language, and roadmap. There is no application code yet, and that is intentional. The domain model and the shape of the recommendation system are the hard parts of this project, so they get written down before anything is built.
+Phase 1: core loop. Phase 0 (product definition, architecture, design language, roadmap) is complete. The Xcode project and the `ForgeKit` / `ForgeData` / `ForgeUI` package split are in place with strict concurrency enabled; the domain model, persistence, and the deterministic recommender are being built out inside them next.
 
 ## The problem
 
