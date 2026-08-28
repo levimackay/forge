@@ -5,9 +5,9 @@
 ![License](https://img.shields.io/badge/license-MIT-1c1c1e?style=flat-square)
 ![Status](https://img.shields.io/badge/status-phase%201%20%C2%B7%20core%20loop-8a5a2b?style=flat-square)
 
-A native iOS app that turns long term goals into daily missions.
+A native iOS app that's Duolingo for CS fundamentals, built for students prepping for technical interviews.
 
-I built FORGE because "become a better engineer" doesn't tell you what to open on a Tuesday night with forty free minutes. FORGE breaks a goal into the skills it depends on, hands you one concrete mission at a time, and uses what you actually complete to decide what to recommend next.
+I built FORGE because "get ready for interviews" doesn't tell you what to open on a Tuesday night with forty free minutes. FORGE breaks CS fundamentals like data structures and algorithms into a skill tree, hands you one concrete mission at a time, and uses what you actually complete to decide what to recommend next, so weak topics don't stay invisible until they show up in an interview.
 
 ```text
 Goal -> Skills -> Progress -> Recommended Mission -> Completion -> Updated Progress

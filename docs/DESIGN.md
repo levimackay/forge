@@ -10,6 +10,8 @@ Not a game. Not a dashboard. Not a coach. The closest analogue is a well-made lo
 
 The eight properties the interface has to satisfy: native, minimal, premium, calm, focused, highly responsive, intentionally animated, accessible.
 
+FORGE borrows Duolingo's structure, a daily habit loop over a skill tree that adapts to what you're weak at, not its visual language. No owl, no streak flame, no cartoon rewards. A calm, premium tool is what makes it credible to someone about to sit a technical interview rather than learn a language for fun.
+
 ## The one idea
 
 **Heat is earned.**
@@ -23,7 +25,7 @@ This is the whole visual identity, and it is why FORGE does not need illustratio
 | Avoid | Why |
 | --- | --- |
 | Gradient-heavy surfaces | Gradients are the fastest way to look like a template. Flat, considered surfaces age better. |
-| Gamification: XP, levels, badges, confetti | Rewards the wrong thing. Evidence of work is the reward. |
+| XP, badges, confetti, mascots, leaderboards | Rewards the wrong thing, and reads as a kids' app to someone prepping for a job interview. Evidence of work is the reward. |
 | A cluttered dashboard | Six numbers on a screen is six decisions deferred. |
 | Generic AI product styling | Purple, glow effects, sparkle icons, and typing animations signal a category, not a product. |
 | Cyberpunk, neon, terminal aesthetics | Loud, dated, and at odds with a product about sustained calm effort. |

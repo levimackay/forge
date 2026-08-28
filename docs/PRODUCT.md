@@ -4,11 +4,11 @@ Status: draft, Phase 0. This document defines what FORGE is for and what the fir
 
 ## User
 
-The first user is one person: a computer science student with a long-horizon goal, limited and irregular free time, and no shortage of ambition. That person already knows roughly what they want to become. What they lack is a reliable way to convert that into the right forty minutes of work tonight.
+Computer science students preparing for technical interviews: mastering data structures and algorithms, and the rest of the fundamentals a whiteboard or online assessment expects, with limited and irregular free time. That person already knows roughly what "ready" looks like. What they lack is a reliable way to convert that into the right forty minutes of practice tonight, and a system that keeps score of which topics are actually solid versus which ones they are avoiding.
 
-Building for one real user with a real problem is deliberate. FORGE is designed to be used every day by its author before it is designed to be used by anyone else. A product that survives that test has a chance of being useful to a wider audience: anyone pursuing a difficult multi-year goal with self-directed practice. A product that does not survive it should not ship.
+Building for one real user with a real problem is deliberate. FORGE is designed to be used every day by its author, a CS student in the middle of his own interview prep, before it is designed to be used by anyone else. A product that survives that test has a chance of being useful to the wider population of students in the same position. A product that does not survive it should not ship.
 
-Who FORGE is not for, at least initially: teams, coaches managing other people, anyone looking for a general task manager, and anyone whose goals are already broken into an externally provided curriculum. If a syllabus already tells you what to do next, you do not need FORGE.
+Who FORGE is not for, at least initially: teams, coaches managing other people, anyone looking for a general task manager, and anyone past the fundamentals stage looking for company-specific mock interviews. FORGE is a Duolingo for CS fundamentals, not a LeetCode clone or a mock-interview platform.
 
 ## Problem
 
@@ -16,11 +16,11 @@ Ambition is abstract. Action is concrete. The gap between them is where most sel
 
 The specific failures FORGE targets:
 
-1. **The translation problem.** "Get better at system design" does not tell you what to open. Doing that translation costs energy at exactly the moment you have the least of it.
-2. **The blind spot problem.** People practice what they already enjoy and quietly avoid what they are weak at. Without a record, weakness is invisible.
-3. **The attribution problem.** Hours spent do not obviously connect to goals reached. It is very possible to work hard for months in a direction that does not serve the stated goal.
-4. **The variable time problem.** A recommendation that assumes three uninterrupted hours is useless on a night with thirty minutes.
-5. **The horizon problem.** Motivation is a poor engine over a two-year timescale. Something has to carry the decision-making when motivation is not there.
+1. **The translation problem.** "Get ready for technical interviews" does not tell you what to open. Doing that translation costs energy at exactly the moment you have the least of it.
+2. **The blind spot problem.** Students grind the topics they already like (arrays, easy problems) and quietly avoid what they are weak at (graphs, DP, system design). Without a record, weakness is invisible, until it shows up in the interview.
+3. **The attribution problem.** Hours spent do not obviously connect to interview-readiness. It is very possible to solve a hundred easy problems and still fail on the topics that actually get tested.
+4. **The variable time problem.** A recommendation that assumes three uninterrupted hours is useless on a night with thirty minutes between classes.
+5. **The horizon problem.** Motivation is a poor engine over a multi-month prep timeline. Something has to carry the decision-making when motivation is not there.
 
 ## Core loop
 
@@ -67,6 +67,7 @@ Everything below must exist for version 1 to be real. Nothing below is optional.
 - See per-skill proficiency and practice history
 - See the record of completed missions over time
 - Understand at a glance which skills under the primary goal are being neglected
+- See a daily practice streak as a plain fact, days practiced in a row, with no penalty animation or guilt copy when it breaks
 
 **Platform baseline**
 - Local persistence, working fully offline
@@ -84,10 +85,10 @@ Deliberately excluded from version 1. Each of these is excluded for a reason, no
 | Any AI or LLM feature | The deterministic recommender is the baseline a model has to beat. Building the model first means never knowing whether it helped. |
 | Widgets, Live Activities, Watch app, App Intents | Surface area for a loop that is not yet proven. |
 | Push notifications and reminders | Nagging is the easiest way to make someone delete an app. Earn attention before demanding it. |
-| Streaks, points, levels, badges, confetti | Gamification optimizes for engagement, and engagement is not the goal. Evidence is. |
+| Points, badges, confetti, leaderboards, streak-loss guilt notifications | Manipulative engagement mechanics optimize for opening the app, not for interview readiness. A streak count is still in scope, see MVP, but only as an honest fact, not a dark pattern. |
 | Social features, sharing, accountability partners | Different product. |
 | A dashboard of charts | Any chart that does not change a decision is decoration. |
-| A prebuilt mission library or curriculum | The system has to work with missions the user cares about, not generic content. |
+| A generic, user-authored-only mission system with no starter content | Students do not show up knowing what "DSA fundamentals" breaks down into. FORGE now ships a curated starter skill tree for CS fundamentals (arrays, hashing, trees, graphs, recursion, DP, and so on), the way Duolingo ships a language tree instead of a blank flashcard deck. Users can still add their own goals and skills on top of it. |
 | Multiple users, accounts, or a backend | No server means no server problems. |
 | Calendar or third-party integrations | Every integration is a permanent maintenance cost. |
 
@@ -103,6 +104,7 @@ Candidates for later phases, in rough order of how likely they are to be worth i
 6. **AI-assisted goal decomposition.** Turning a stated goal into a first draft of its skill tree is the single most tedious part of onboarding, and it is a good fit for a language model. On-device Foundation Models preferred, since the input is personal.
 7. **Apple Watch.** Mission start and completion from the wrist.
 8. **Honest analytics.** Momentum, consistency, and time invested per goal, shown only where they inform a decision.
+9. **Spaced review.** Resurface a topic right before the recommender's proficiency model predicts it would decay, instead of waiting for the user to notice it has gone stale.
 
 ## Success criteria
 
