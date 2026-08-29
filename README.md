@@ -52,6 +52,3 @@ Levi Mackay
 ## License
 
 MIT. See [LICENSE](LICENSE).
-
-**Last updated:** 2026-08-29 11:47 PDT
-
